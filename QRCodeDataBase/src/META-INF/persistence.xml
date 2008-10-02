@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	<persistence-unit name="QRCodeDataBase">
+	<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>br.com.qrcodedatabase.entity.ContaBancariaModel</class>
+		<class>br.com.qrcodedatabase.entity.PessoaFisicaModel</class>
+      	<class>br.com.qrcodedatabase.entity.PessoaJuridicaModel</class>
+      	<class>br.com.qrcodedatabase.entity.PessoaModel</class>
+      	<class>br.com.qrcodedatabase.entity.StatusTransacaoModel</class>
+      	<class>br.com.qrcodedatabase.entity.TransacoesBancariasModel</class>
+      	<!--  -->
+      	<class>br.com.qrcodedatabase.model.Agencia</class>
+      	<class>br.com.qrcodedatabase.model.Banco</class>
+      	<class>br.com.qrcodedatabase.model.ContaBancaria</class>
+      	<class>br.com.qrcodedatabase.model.Pessoa</class>
+      	<class>br.com.qrcodedatabase.model.PessoaFisica</class>
+      	<class>br.com.qrcodedatabase.model.PessoaJuridica</class>
+      	<class>br.com.qrcodedatabase.model.StatusOperacao</class>
+      	<class>br.com.qrcodedatabase.model.StatusTransacao</class>
+      	<class>br.com.qrcodedatabase.model.Transacao</class>
+		
+      	
+    	<properties> 
+			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/TCC"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+			<property name="hibernate.connection.username" value="root"/>
+			<property name="hibernate.connection.password" value="123456"/>
+		</properties>
+	
+	</persistence-unit>
+</persistence>
